@@ -1,0 +1,129 @@
+footer {
+    --bs-bg-opacity: 0.3 !important;
+    & .footerLogo {
+        height: 50px;
+        margin-bottom: 4px;
+    }
+    & .footerDes {
+        font-size: 14px;
+        color: $gray-900;
+        font-weight: 400;
+        opacity: 0.9;
+    }
+    & .footerHeading {
+        font-size: 16px;
+        color: $gray-900;
+        opacity: 0.9;
+        font-weight: 500;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    & .footerLink {
+        & .footerAnchor {
+            font-size: 14px;
+            color: $gray-900;
+            text-decoration: none;
+            font-weight: 400;
+            opacity: 0.9;
+            padding: 4px 0;
+            width: 100%;
+            display: inline-block;
+            transition: 0.3s linear;
+            & span {
+                font-weight: 500;
+            }
+        }
+        &.footerLogo {
+            & svg {
+                width: 120px;
+                height: 40px;
+                & path {
+                    fill: $gray-900;
+                }
+            }
+        }
+        &.footerDesc {
+            color: $gray-900;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        &.footerInput {
+            & .form-control {
+                font-size: 14px;
+                background-color: $dark;
+                color: $gray-200;
+                border-color: $gray-200;
+                height: 36px;
+                padding-right: 36px;
+                &::placeholder {
+                    color: $gray-200;
+                }
+                &:focus {
+                    outline: none !important;
+                    border-color: $gray-200 !important;
+                }
+            }
+            & .sendBtn {
+                height: 36px;
+                width: 36px;
+                & img {
+                    height: 22px;
+                }
+            }
+        }
+        &:hover {
+            & .footerAnchor {
+                transform: translateX(8px);
+            }
+        }
+    }
+}
+.bottomFooter {
+    & .footerDesc {
+        color: $gray-900;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+}
+
+
+.mobileFooter {
+    background-color: $white;
+    padding: 13px 0;
+    border-top: 1px solid $gray-300;
+    & .bottomBarLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & .bottomBarLinkInner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        & img {
+            height: 16px;
+            filter: brightness(0.5);
+        }
+        & .BottomBarText {
+            font-size: 10px;
+            color: $gray-900;
+        }
+        &.active {
+            & img {
+                filter: brightness(1);
+            }
+            & .BottomBarText {
+                color: $theme1;
+            }
+        }
+        & .cartVal {
+            height: 15px;
+            width: 15px;
+            font-size: 10px;
+            top: -5px;
+            right: -11px;
+        }
+    }
+}

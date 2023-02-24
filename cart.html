@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Static Required meta tags (should be same on every page) -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <meta name="theme-color" content="#1a73e9" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+
+    <meta name="web-author" content="web-author-name" />
+    <meta name="googlebot" content="all">
+    <meta name="revisit-after" content="3 days">
+    <meta name="copyright" content="Site Name">
+    <meta name="language" content="English">
+    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:site" content="@miradontsoa">
+    <meta name="twitter:creator" content="@miradontsoa">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Facebook Meta -->
+    <meta property="fb:app_id" content="0" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Dynamic Meta Tags (Should change for every page) -->
+
+    <title>Pandora</title>
+
+        <!-- Required meta tags -->
+    <meta name="title" content="Title here" />
+    <meta name="discrption" content="Discrption here" />
+    <meta name="keyword" content="Keyword here" />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:title" content="Title here">
+    <meta name="twitter:description" content="Discrption here">
+    <meta name="twitter:image" content="assets/img/jewellery/Favicon.png">
+
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Title here">
+    <meta property="og:description" content="Discrption here">
+    <meta property="og:image" content="assets/img/jewellery/Favicon.png">
+    <meta property="og:image:secure_url" content="assets/img/jewellery/Favicon.png">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/jewellery/Favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/jewellery/Favicon.png" />
+    <meta name="classification" content="Title here" />
+    <link rel="canonical" href="" />
+    <!-- jquery -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .cardInput {}
+        .cardLabel {}
+    </style>
+</head>
+<body class="vh-100 overflow-hidden cartPage" page-name="cartPage">
+    <div class="loader active">
+        <div class="preloader-square-swapping">
+            <div class="cssload-square-part cssload-square-green"></div>
+            <div class="cssload-square-part cssload-square-pink"></div>
+            <div class="cssload-square-blend"></div>
+        </div>
+    </div>
+    <div class="bodyWrapper">
+        <div class="bodyWrapperInner h-100">
+            <div class="bosyWrapperMain h-100">
+                <!-- Header Starts Here -->
+                <div class="container-fluid Header">
+                    <div class="container px-0 px-lg-2 position-relative">
+                        <div class="row mx-0 align-items-center justify-content-between pt-2">
+                            <a href="index.html" class="col-xl-3 col-lg-2 col-auto logoBox px-0">
+                                <img src="assets/img/jewellery/logo.png" alt="">
+                            </a>
+                            <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+                                <div class="position-relative headerSearchBox">
+                                    <input type="text" class="form-control shadow-none searchInput" placeholder="What are you looking for...">
+                                    <img src="assets/img/searchLightBlue.svg" alt="" class="searchImg">
+                                </div>
+                            </div> 
+                            <div class="col-xl-3 col-lg-2 col ps-0">
+                                <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-end iconBox">
+                                    <li class="iconLi d-lg-none ps-3 ps-lg-4"><a class="iconAnchor" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas" aria-controls="searchOffcanvas"><img src="assets/img/searchLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3 ps-lg-4 d-none d-lg-block"><a class="iconAnchor" href="javascript:;"><img src="assets/img/wishlistLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3 ps-lg-4"><a class="iconAnchor" href="javascript:;"><img src="assets/img/profileLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3 ps-lg-4 d-none d-lg-block">
+                                        <a class="iconAnchor position-relative" href="cart.html">
+                                            <img src="assets/img/bagLightBlue.svg" alt="">
+                                            <span class="d-inline-flex position-absolute rounded-circle align-items-center justify-content-center cartValue">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="iconLi ps-3 ps-lg-4 d-lg-none" data-bs-toggle="offcanvas" href="#mobileMenuOffcancas" role="button" aria-controls="mobileMenuOffcancas">
+                                        <a class="iconAnchor" href="javascript:;"><img src="assets/img/menuLightBlue.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mx-0 align-items-center justify-content-center d-none d-lg-flex">
+                            <div class="col-12">
+                                <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-center LinkBox">
+                                    <li class="LinkLi">
+                                        <a class="LinkAnchor" href="javascript:;">Trending</a>
+                                        <div class="liHoverBox position-absolute top-100 start-0 w-100 shadow-sm bg-white">
+                                            <div class="container py-4">
+                                                <div class="row mx-0">
+                                                    <div class="col-lg-7 col-xl-6">
+                                                        <div class="row mx-0">
+                                                            <div class="col-4">
+                                                                <div class="subCatLiHead">Shop By Design</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Engagement</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Solitaire</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Couple Bands</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Casual</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Eternity</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="subCatLiHead">Shop By Material</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Diamond</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Gold</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Platinum</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Gemstone</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Silver + Gold</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="subCatLiHead">Shop By</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Below ₹10K</li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">₹10K - ₹30K</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">₹30K - ₹50K</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">₹50K - ₹70K</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Above ₹70K</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-xl-6">
+                                                        <a href="javascript:;" class="w-100 h-100 d-block">
+                                                            <img src="assets/img/jewellery/headertrending.avif" class="w-100 h-100 object-fit-cover" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="LinkLi">
+                                        <a class="LinkAnchor" href="javascript:;">Rings</a>
+                                    </li>
+                                    <li class="LinkLi LinkLiSingleHover">
+                                        <a class="LinkAnchor" href="javascript:;">Ear Rings</a>
+                                    </li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Necklace</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Chains</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Bangles & Bracelets</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Gold</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Solitaires</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Ends Here -->
+                <div class="bodyScrollPart position-relative">
+                    <section class="bg-light">
+                        <div class="container py-4 py-sm-5 h-100">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <div class="col-xxl-10">
+                                    <div class="card">
+                                        <div class="card-body p-4">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-xl-8">
+                                                    <div class="mb-3">
+                                                        <a href="product-category.html" class="text-body text-decoration-none continueShopping">
+                                                            <img src="assets/img/jewellery/leftArrow.svg" alt=""> Continue shopping</a>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                                        <div>
+                                                            <div class="mb-1 productDes">Shopping cart</div>
+                                                            <div class="mb-0 productDes">You have 4 items in your cart</div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-0  d-none d-sm-flex align-items-center ">
+                                                                <span class="text-muted text-nowrap me-2 productDes">Sort by:</span>
+                                                                <select name="" id="" class="form-select shadow-none sortSelect">
+                                                                    <option value="">price</option>
+                                                                    <option value="">price</option>
+                                                                    <option value="">price</option>
+                                                                    <option value="">price</option>
+                                                                    <option value="">price</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                
+                                                <div class="card mb-3 border-0 shadow-sm">
+                                                    <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div>
+                                                            <img src="assets/img/jewellery/pro1.svg" class="img-fluid rounded-3 productImg" alt="Shopping item" style="width: 65px;">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="productName">Easha Diamond Necklace</div>
+                                                            <div class="small productDes mb-0">14K Rose Gold (17.51g)</div>
+                                                            <div class="mb-0 productPrice d-sm-none">₹1799</div>
+                                                            <div class="fw-normal mb-0 productQuantity d-sm-none">Quantity: 1</div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div style="width: 50px;" class="d-none d-sm-block">
+                                                            <div class="fw-normal mb-0 productQuantity">1</div>
+                                                        </div>
+                                                        <div style="width: 80px;" class="d-none d-sm-block">
+                                                            <div class="mb-0 productPrice">₹1799</div>
+                                                        </div>
+                                                        <a href="#!"><img src="assets/img/jewellery/trash.svg" alt="" class="removeProduct"></a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-3 border-0 shadow-sm">
+                                                    <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div>
+                                                            <img src="assets/img/jewellery/pro4.svg" class="img-fluid rounded-3 productImg" alt="Shopping item" style="width: 65px;">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="productName">Divine Diamond Bangle</div>
+                                                            <div class="small productDes mb-0">14K Rose Gold (17.51g)</div>
+                                                            <div class="mb-0 productPrice d-sm-none">₹1799</div>
+                                                            <div class="fw-normal mb-0 productQuantity d-sm-none">Quantity: 1</div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div style="width: 50px;" class="d-none d-sm-block">
+                                                            <div class="fw-normal mb-0 productQuantity">1</div>
+                                                        </div>
+                                                        <div style="width: 80px;" class="d-none d-sm-block">
+                                                            <div class="mb-0 productPrice">₹1799</div>
+                                                        </div>
+                                                        <a href="#!"><img src="assets/img/jewellery/trash.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card mb-3 border-0 shadow-sm">
+                                                    <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div>
+                                                            <img src="assets/img/jewellery/pro5.svg" class="img-fluid rounded-3 productImg" alt="Shopping item" style="width: 65px;">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="productName">Rose Diamond Ring</div>
+                                                            <div class="small productDes mb-0">14K Rose Gold (17.51g)</div>
+                                                            <div class="mb-0 productPrice d-sm-none">₹1799</div>
+                                                            <div class="fw-normal mb-0 productQuantity d-sm-none">Quantity: 1</div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div style="width: 50px;" class="d-none d-sm-block">
+                                                            <div class="fw-normal mb-0 productQuantity">1</div>
+                                                        </div>
+                                                        <div style="width: 80px;" class="d-none d-sm-block">
+                                                            <div class="mb-0 productPrice">₹1799</div>
+                                                        </div>
+                                                        <a href="#!"><img src="assets/img/jewellery/trash.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="card mb-3 border-0 shadow-sm">
+                                                    <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div>
+                                                            <img src="assets/img/jewellery/pro6.svg" class="img-fluid rounded-3 productImg" alt="Shopping item" style="width: 65px;">
+                                                        </div>
+                                                        <div class="ms-3">
+                                                            <div class="productName">Rose Diamond Necklace</div>
+                                                            <div class="small productDes mb-0">14K Rose Gold (17.51g)</div>
+                                                            <div class="mb-0 productPrice d-sm-none">₹1799</div>
+                                                            <div class="fw-normal mb-0 productQuantity d-sm-none">Quantity: 1</div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center">
+                                                        <div style="width: 50px;" class="d-none d-sm-block">
+                                                            <div class="fw-normal mb-0 productQuantity">1</div>
+                                                        </div>
+                                                        <div style="width: 80px;" class="d-none d-sm-block">
+                                                            <div class="mb-0 productPrice">₹1799</div>
+                                                        </div>
+                                                        <a href="#!"><img src="assets/img/jewellery/trash.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-4">
+                                
+                                                <div class="card text-white rounded-3" style="background-color: #3b71cb;">
+                                                    <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                                        <h5 class="mb-0">Card details</h5>
+                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                                                        class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                                                    </div>
+                                
+                                                    <div class="small mb-2">Card type</div>
+                                                    <a href="#!" type="submit" class="text-white">
+                                                        <img src="assets/img/jewellery/mastercard.svg" class="cardImg" alt="">
+                                                    </a>
+                                                    <a href="#!" type="submit" class="text-white">
+                                                        <img src="assets/img/jewellery/visa.svg" class="cardImg" alt="">
+                                                    </a>
+                                                    <a href="#!" type="submit" class="text-white">
+                                                        <img src="assets/img/jewellery/amex.svg" class="cardImg" alt="">
+                                                    </a>
+                                                    <a href="#!" type="submit" class="text-white">
+                                                        <img src="assets/img/jewellery/paypal.svg" class="cardImg" alt="">
+                                                    </a>
+                                
+                                                    <form class="mt-3 mt-sm-4">
+                                                        <div class="form-outline form-white mb-3 mb-sm-4 position-relative">
+                                                        <input type="text" id="typeName" class="form-control shadow-none cardInput" siez="17"
+                                                            />
+                                                        <label class="form-label cardLabel" for="typeName">Cardholder's Name</label>
+                                                        </div>
+                                
+                                                        <div class="form-outline form-white  mb-3 mb-sm-4 position-relative">
+                                                        <input type="text" id="typeText" class="form-control shadow-none cardInput" siez="17"
+                                                            minlength="19" maxlength="19" />
+                                                        <label class="form-label cardLabel" for="typeText">Card Number</label>
+                                                        </div>
+                                
+                                                        <div class="row mb-3 mb-sm-4 g-3 g-sm-4">
+                                                        <div class="col-6">
+                                                            <div class="form-outline form-white position-relative">
+                                                            <input type="text" id="typeExp" class="form-control shadow-none cardInput"
+                                                                size="7" id="exp" minlength="7" maxlength="7" />
+                                                            <label class="form-label cardLabel" for="typeExp">Expiration</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-outline form-white position-relative">
+                                                            <input type="password" id="typeText" class="form-control shadow-none cardInput"
+                                                                size="1" minlength="3" maxlength="3" />
+                                                            <label class="form-label cardLabel" for="typeText">Cvv</label>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                
+                                                    </form>
+                                
+                                                    <hr class="my-4">
+                                
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mb-2 cartText">Subtotal</div>
+                                                        <div class="mb-2 cartText">₹4798.00</div>
+                                                    </div>
+                                
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="mb-2 cartText">Shipping</div>
+                                                        <div class="mb-2 cartText">₹20.00</div>
+                                                    </div>
+                                
+                                                    <div class="d-flex justify-content-between mb-4">
+                                                        <div class="mb-2 cartText">Total(Incl. taxes)</div>
+                                                        <div class="mb-2 cartText">₹4818.00</div>
+                                                    </div>
+                                
+                                                    <button type="button" class="btn btn-theme1 btn-block w-100 checkoutBtn">
+                                                        <div class="d-flex justify-content-between">
+                                                        <span>₹4818.00</span>
+                                                        <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                                                        </div>
+                                                    </button>
+                                
+                                                    </div>
+                                                </div>
+                                
+                                                </div>
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- web footer starts here -->
+                    <footer class="container-fluid bg-theme1 d-none d-lg-block webFooter">
+                        <div class="container">
+                            <div class="row row-cols-5 py-5">
+                                <div class="col">
+                                    <!-- <img src="assets/img/jewellery/logo.png" alt="" class="footerLogo">
+                                    <div class="footerDes">
+                                        Lorem ipsum dolor sit amet consec adipisicing elit. Modi ea fuga vero similique neque ratione rerum magnam quia blanditiis officiis?
+                                    </div> -->
+                                    <div class="footerHeading">INFORMATION</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">About Us</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Contact Us</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Career</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">My Account</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Orders and Returns</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">JEWELLERY GUIDES</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Diamond Education</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Gemstone Education</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Metal Education</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Size Guide</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Gold Rate Guide</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Jewellery Care</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">EXPERIENCE PANDORA</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Lookbook</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Stylery Blog</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Video Gallery</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Order Tracking</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Virtual Try On</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">CUSTOMER SERVICES</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Help & FAQs</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Returns Policy</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Terms & Conditions</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Privacy Policy</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Support Center</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">CONTACT US</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink footerDesc mt-2 pe-4">
+                                            55 Gallaxy Enque, 2568 steet, 23568 NY
+                                        </li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor"><span>Phone:</span>(440) 000 000 0000</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor"><span>Email:</span>pandora@test.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="container-fluid py-3 bottomFooter d-none d-lg-block">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col footerLink footerDesc text-center">
+                                    © <span id="footerYear"></span> All Rights Reserved
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--web  footer ends here -->
+                </div>
+                
+                <!--mobile footer starts here -->
+                <div class="mobileFooter d-lg-none">
+                    <div class="row mx-0 row-cols-5">
+                        <a href="index.html" class="col bottomBarLink text-decoration-none">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/homeLightBlue.svg" alt="">
+                                <div class="BottomBarText">Home</div>
+                            </div>
+                        </a>
+                        <a href="product-category.html" class="col bottomBarLink text-decoration-none">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/categoriesLightBlue.svg" alt="">
+                                <div class="BottomBarText">Category</div>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="col bottomBarLink text-decoration-none">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/notificationLightBlue.svg" alt="">
+                                <div class="BottomBarText">Notification</div>
+                            </div>
+                        </a>
+                        <div class="col bottomBarLink text-decoration-none">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                <div class="BottomBarText">Wishlist</div>
+                            </div>
+                        </div>
+                        <a href="cart.html" class="col bottomBarLink text-decoration-none active">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/bagLightBlue.svg" alt="">
+                                <div class="BottomBarText">Cart</div>
+                                <span class="cartVal d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white position-absolute">2</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--mobile footer ends here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- search offcanvas -->
+
+<div class="offcanvas offcanvas-top searchOffcanvas" tabindex="-1" id="searchOffcanvas" aria-labelledby="searchOffcanvasLabel">
+    <div class="offcanvas-header px-md-3 px-lg-5">
+        <div class="title" id="searchOffcanvasLabel">What are you looking for?</div>
+        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/crossLightBlue.svg" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body px-md-3 px-lg-5 py-2">
+        <div class="position-relative">
+            <input type="text" class="form-control shadow-none w-100 searchInput" placeholder="Search for products, brands and more">
+            <button class="btn shadow-none position-absolute top-50 searchBtn">
+                <img src="assets/img/searchLightBlue.svg" alt="" class="">
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- mobile menu offcanvas -->
+
+<div class="offcanvas offcanvas-start mobileMenuOffcanvas" tabindex="-1" id="mobileMenuOffcancas" aria-labelledby="mobileMenuOffcancasLabel">
+    <div class="offcanvas-header border-bottom">
+        <div class="logo" id="mobileMenuOffcancasLabel">
+            <img src="assets/img/jewellery/logo.png" alt="">
+        </div>
+        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/crossLightBlue.svg" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body py-2">
+        <ul class="list-unstyled m-0 p-0 mobMenuUl">
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Home</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">About Us</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Order & Returns</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Help Center</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Career</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">FAQ's</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Contact Us</a></li>
+        </ul>
+        <div class="accordion" id="sidebarAccordian">
+            <div class="accordion-item border-0">
+                <div class="accordion-header" id="accordianHeadOne">
+                    <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="menuTitle flex-fill">Dropdown</span>
+                    <img class="menuArrow d-inline-block" src="assets/img/jewellery/arrow.svg" alt="down arrow">
+                    </div>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordianHeadOne" data-bs-parent="#sidebarAccordian">
+                    <div class="accordion-body py-0">
+                    <ul class="m-0 list-unstyled innerMenuLinks">
+                        <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative active" href="javascript:;">Option 1</a></li>
+                        <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 2</a></li>
+                        <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 3</a></li>
+                        <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 4</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <div class="accordion-header" id="accordianHeadTwo">
+                    <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="menuTitle flex-fill">Dropdown</span>
+                        <img class="menuArrow d-inline-block" src="assets/img/jewellery/arrow.svg" alt="down arrow">
+                    </div>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordianHeadTwo" data-bs-parent="#sidebarAccordian">
+                    <div class="accordion-body">
+                        <ul class="m-0 list-unstyled innerMenuLinks">
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative active" href="javascript:;">Option 1</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 2</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 3</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <div class="accordion-header" id="accordianHeadThree">
+                    <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="menuTitle flex-fill">Dropdown</span>
+                        <img class="menuArrow d-inline-block" src="assets/img/jewellery/arrow.svg" alt="down arrow">
+                    </div>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="accordianHeadThree" data-bs-parent="#sidebarAccordian">
+                    <div class="accordion-body">
+                        <ul class="m-0 list-unstyled innerMenuLinks">
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative active" href="javascript:;">Option 1</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 2</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 3</a></li>
+                            <li class="innerMenuLink"><a class="d-block text-decoration-none position-relative" href="javascript:;">Option 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Bootstrap Js -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

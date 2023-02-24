@@ -1,0 +1,142 @@
+.sectionHeading {
+    & .sectionHeadingTop {
+        font-size: 14px;
+        color: $gray-900;
+        letter-spacing: 0.4px;
+    }
+    & .sectionHeadingBottom {
+        font-size: 35px;
+        color: $gray-900;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: $gray-900;
+            left: 50%;
+            top: 100%;
+            z-index: 5;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+@mixin sectionHeading-mixin-min-sm(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-min-md(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-min-lg(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-min-xl(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-min-xxl(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-xl(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-1300(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-lg(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+        font-size: 14px;
+    }
+    & .sectionHeadingBottom {
+        font-size: 30px;
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-md(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+    }
+    & .sectionHeadingBottom {
+        font-size: 30px;
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-sm(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+        font-size: 12px;
+    }
+    & .sectionHeadingBottom {
+        font-size: 24px;
+        &::before {
+        }
+    }
+}
+};
+@mixin sectionHeading-mixin-max-xs(){
+    .sectionHeading {
+    & .sectionHeadingTop {
+        font-size: 10px;
+    }
+    & .sectionHeadingBottom {
+        font-size: 20px !important;
+        &::before {
+        }
+    }
+}
+};
