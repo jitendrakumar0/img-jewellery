@@ -3,11 +3,13 @@
         font-size: 14px;
         color: $gray-900;
         letter-spacing: 0.4px;
+        text-transform: uppercase;
     }
     & .sectionHeadingBottom {
         font-size: 35px;
         color: $gray-900;
         position: relative;
+        text-transform: uppercase;
         &::before {
             position: absolute;
             content: "";

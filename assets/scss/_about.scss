@@ -1,0 +1,365 @@
+.aboutHeroSection {
+    background-image: url(../img/jewellery/aboutBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    & .subHeading {
+        font-size: 16px;
+        color: $white;
+        letter-spacing: 0.5px;
+    }
+    & .heading {
+        font-size: 60px;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: $theme1;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: $theme1;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken($theme1, 10%);
+  }
+  
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 26px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .aboutAuthor {
+    & .text1 {
+        font-size: 16px;
+        color: $gray-900;
+        margin-bottom: 8px;
+    }
+    & .text2 {
+        font-size: 40px;
+        color: $gray-900;
+        margin-bottom: 8px;
+        line-height: 47px;
+    }
+    & .text3 {
+        font-size: 16px;
+        color: $gray-900;
+    }
+  }
+  .whySection {
+    & .whyCard {
+        & .cardNo {
+            font-size: 120px;
+            text-transform: uppercase;
+            font-weight: 900;
+            opacity: 0.2;
+            line-height: 100px;
+            font-family: none;
+        }
+        & .cardHeading {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 8px;
+            color: $gray-800;
+        }
+        & .cardText {
+            font-size: 15px;
+        }
+    }
+  }
+
+  .testimonialSection {
+    --bs-bg-opacity: 0.1 !important;
+    & .testiomnialCarousel {
+      & .owl-stage-outer {
+        padding: 0;
+      }
+    }
+    & .testimonialCard {
+      & .textBox{
+        letter-spacing: 0.2px;
+        font-size: 14px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 96%;
+          left: 40px;
+          width: 0; 
+          height: 0; 
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-top: 20px solid #ffffff;
+        }
+      }
+      & .userImg {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    & .owl-dots {
+      display: flex;
+      justify-content: end;
+      & .owl-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        margin-left: 6px;
+        &.active {
+          background-color: $theme1;
+          width: 32px;
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .aboutHeroSection {
+    height: 220px;
+    background-position: left;
+    & .subHeading {
+        font-size: 13px;
+    }
+    & .heading {
+        font-size: 40px;
+    }
+}
+.aboutAuthor {
+    & .text1 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    & .text2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    & .text3 {
+        font-size: 14px;
+    }
+  }
+  .video-play-button span {
+    border-left: 20px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+  .video-play-button:after {
+    width: 60px;
+    height: 60px;
+  } .video-play-button:before {
+    width: 60px;
+    height: 60px;
+  }
+  .whySection {
+    & .whyCard {
+        & .cardNo {
+            font-size: 90px;
+            line-height: 70px;
+        }
+        & .cardHeading {
+            font-size: 17px;
+        }
+        & .cardText {
+            font-size: 14px;
+        }
+    }
+  }
+  .testimonialSection {
+    & .testiomnialCarousel {
+      & .owl-stage-outer {
+      }
+    }
+    & .testimonialCard {
+      & .textBox{
+        &::before {
+        }
+      }
+      & .userImg {
+      }
+      & .userName {
+        font-size: 14px;
+      }
+      & .userLocation {
+        font-size: 14px;
+      }
+    }
+    & .owl-dots {
+      & .owl-dot {
+        &.active {
+        }
+      }
+    }
+  }
+}
+  @media (max-width: 767px) {
+    .aboutHeroSection {
+    height: 180px;
+    background-position: left;
+    & .subHeading {
+    }
+    & .heading {
+    }
+}
+.aboutAuthor {
+    & .text1 {
+    }
+    & .text2 {
+    }
+    & .text3 {
+    }
+  }
+  .video-play-button span {
+  }
+  .video-play-button:after {
+  } .video-play-button:before {
+  }
+  .whySection {
+    & .whyCard {
+        & .cardNo {
+        }
+        & .cardHeading {
+        }
+        & .cardText {
+        }
+    }
+  }
+  .testimonialSection {
+    & .testiomnialCarousel {
+      & .owl-stage-outer {
+      }
+    }
+    & .testimonialCard {
+      & .textBox{
+        &::before {
+        }
+      }
+      & .userImg {
+      }
+      & .userName {
+      }
+      & .userLocation {
+      }
+    }
+    & .owl-dots {
+      & .owl-dot {
+        &.active {
+        }
+      }
+    }
+  }
+}
+
+  @media (max-width: 575px) {
+    .aboutHeroSection {
+    & .subHeading {
+    }
+    & .heading {
+    }
+}
+.aboutAuthor {
+    & .text1 {
+    }
+    & .text2 {
+    }
+    & .text3 {
+    }
+  }
+  .video-play-button span {
+  }
+  .video-play-button:after {
+  } .video-play-button:before {
+  }
+  .whySection {
+    & .whyCard {
+        & .cardNo {
+        }
+        & .cardHeading {
+        }
+        & .cardText {
+        }
+    }
+  }
+  .testimonialSection {
+    & .testiomnialCarousel {
+      & .owl-stage-outer {
+      }
+    }
+    & .testimonialCard {
+      & .textBox{
+        &::before {
+        }
+      }
+      & .userImg {
+      }
+      & .userName {
+      }
+      & .userLocation {
+      }
+    }
+    & .owl-dots {
+      & .owl-dot {
+        &.active {
+        }
+      }
+    }
+  }
+}
